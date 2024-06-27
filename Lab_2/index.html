@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        header {
+            background-color: #090685;
+            color: #fff;
+            padding: 30px 15px;
+            font-family: serif;
+        }
+
+        nav ul li{
+            display: inline;
+            list-style: none;
+            padding: 15px;
+        }
+
+        nav ul {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 0px;
+        }
+
+
+        section {
+            background-color: #aad8e5;
+            padding: 15px;
+            margin: 5px;
+            border: 2px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            /* height: 580px; */
+        }
+
+        article {
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        article h2, p {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        footer {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #090685;
+            color: #fff;
+            padding: 5px;
+            /* margin-top: 5px; */
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lab2_HTML5</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu1</li>
+            <li>Menu2</li>
+            <li>Menu3</li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Section</h2>
+        <article>
+            <h2>Article</h2>
+            <p>content</p>
+            <canvas id="canvas" width="200" height="130" style="border: 1px solid #000 ;"></canvas>
+        </article>
+        <article>
+            <h2>Article</h2>
+            <p>content</p>
+        </article>
+        <div>
+            <video src="/Lab_2/vid/video_for_ass2.mp4" controls width="500"></video>
+            <img src="/Lab_2/img/image_for_ass2.jpg" alt="Web Design Technologies">
+        </div>
+    </section>
+    <footer>
+        <p>© 2015 WDT. All rights reserved.</p>
+    </footer>
+    
+</body>
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext('2d');
+    ctx.fillStyle = "#E38B78";
+    ctx.fillRect(0,0,200,130);
+    // ขวา/ซ้าย, บน/ล่าง, กว้าง/สูง
+    ctx.fillStyle = "#FE3206";
+    ctx.fillRect(10,20,100,50)
+</script>
+</html>
