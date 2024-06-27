@@ -10,15 +10,55 @@
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
-            
         }
 
         header {
             background-color: #00614c;
             color: #fff;
             padding: 15px;
-            /* หดหกดหกดหดห */
-            font-size: 16px;
+        }
+
+        nav ul, li {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav li {
+            padding: 10px 15px 10px 5px;
+        }
+
+        section {
+            background-color: #cbf6ed;
+            margin: 0px 5px 15px 5px;
+            padding: 0px 10px;
+            border: 1px solid black;
+        }
+
+        article {
+            background-color: #fff;
+            display: flex;
+            border: 1px solid black;
+            margin: 0px 0px 15px 0px;
+            padding: 0px 10px;
+        }
+
+        article .canvas {
+            padding-left: 200px;
+        }
+
+        article video, img {
+            padding: 0px 0px 15px 0px;
+        }
+        
+        section h2 {
+            padding: 15px 0px 15px 0px;
+        }
+
+        footer {
+            background-color: #00614c;
+            font-size: 12px;
+            color: #fff;
+            padding: 10px;
         }
 
     </style>
@@ -26,8 +66,6 @@
 <body>
     <header>
         <h1>Assignment#2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio, consectetur, necessitatibus nulla amet, dignissimos reiciendis iste cupiditate vel illum obcaecati voluptates aliquid quibusdam libero ea animi odio dolorem nostrum?
-        Quisquam sequi aliquid ut minima unde nam sunt quam culpa vitae ullam sint officiis recusandae explicabo, minus maxime voluptates similique dignissimos quia labore dolorum voluptas ex consectetur ea hic. Neque?</p>
     </header>
 
     <nav>
@@ -40,15 +78,24 @@
     </nav>
 
     <section>
+        <h2>HTML5</h2>
+        
         <article>
-            <h2>What is html5 (video)</h2>
-            <video src="/Assignment_2/vid/video_for_ass2.mp4" width="500"></video>
+            <div class="vid">
+                <h2>What is html5 (video)</h2>
+                <video src="/Assignment_2/vid/video_for_ass2.mp4" width="500" controls></video>   
+            </div>
         </article>
 
         <article>
-            <h2>Image</h2>
-            <img src="/Assignment_2/img/image_for_ass2.jpg" alt="Image">
-            <canvas id="canvas" width="200" height="200" style="border: 1px solid black;"></canvas>
+            <div class="img">
+                <h2>Image</h2>
+                <img src="/Assignment_2/img/image_for_ass2.jpg" alt="Image" width="400">
+            </div>
+            <div class="canvas">
+                <h2>Canvas</h2>
+                <canvas id="canvas" width="120" height="100" style="border: 1px solid black;"></canvas>
+            </div>
         </article>
     </section>
 
@@ -56,5 +103,12 @@
         <p>© 2015 WDT. All rights reserved.</p>
     </footer>
 
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext('2d');
+
+        ctx.fillStyle = "#008023";
+        ctx.fillRect(0,0,120,100);
+    </script>
 </body>
 </html>

@@ -97,14 +97,14 @@
         <p>© 2015 WDT. All rights reserved.</p>
     </footer>
     
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext('2d');
+        ctx.fillStyle = "#E38B78";
+        ctx.fillRect(0,0,200,130);
+        // ขวา/ซ้าย, บน/ล่าง, กว้าง/สูง
+        ctx.fillStyle = "#FE3206";
+        ctx.fillRect(10,20,100,50)
+    </script>
 </body>
-<script>
-    var c = document.getElementById("canvas");
-    var ctx = c.getContext('2d');
-    ctx.fillStyle = "#E38B78";
-    ctx.fillRect(0,0,200,130);
-    // ขวา/ซ้าย, บน/ล่าง, กว้าง/สูง
-    ctx.fillStyle = "#FE3206";
-    ctx.fillRect(10,20,100,50)
-</script>
 </html>
