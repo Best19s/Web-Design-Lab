@@ -1,0 +1,130 @@
+@import url('switzer.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Switzer-Regular',"Noto Sans Thai Looped";
+   background-color: #000;
+   color: #fff;
+}
+
+
+
+#header {
+   height: 800px;
+}
+h1 {
+   font-size: 50px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+.card {
+   display: flex;
+   gap: 25px;
+   justify-content: center;
+   padding-bottom: 5rem;
+   padding-top: 5rem;
+}
+
+.content h2 {
+   text-align: center;
+}
+a img {
+   width: 200px;
+   height: 320px;
+   border-radius: 12px;
+}
+
+.head_img {
+   width: auto;
+   height: 400px;
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+}
+
+.container {
+   /* background-color: #fff; */
+   height: 1500px;
+   margin-top: 150px;
+   font-size: 2rem;
+}
+
+.container h2 {
+   margin-bottom: 25px;
+}
+
+#inside_out_2 h2{
+   text-align: center;
+   
+}
+.character {
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+   /* gap: 30px; */
+   
+   border-radius: 25px;
+}
+
+.character h3 {
+   text-align: center;
+}
+
+
+#anxiety img{
+   width: 300px;
+   height: 500px;
+   background-color: #dd7427;
+}
+
+#envy img{
+   width: 300px;
+   height: 500px;
+   background-color: #70cdc5;
+   object-fit: contain;
+}
+
+#ennui img{
+   width: 300px;
+   height: 500px;
+   background-color: #172075;
+   object-fit: contain;
+}
+
+#embarrassment img{
+   width: 300px;
+   height: 500px;
+   background-color: #ee86ab;
+   object-fit: contain;
+   
+}
+
+.review {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   padding-top: 150px;
+}
+.warper{
+   width: 580px;
+}
+
+.warper h1 {
+   margin-top: 0;
+}
+.warper ul li {
+   text-align: left;
+   list-style: none;
+}
+.warper2 video {
+   width: 600px;
+   border-radius: 25px;
+   background-color: #000;
+   
+   /* border: 1px solid #fff; */
+}
