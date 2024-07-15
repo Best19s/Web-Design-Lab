@@ -6,33 +6,72 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Switzer-Regular',"Noto Sans Thai Looped";
-   background-color: #000;
-   color: #fff;
+   /* background-color: #000;
+   color: #fff; */
+   scroll-behavior: smooth;
 }
 
 
 
 #header {
    height: 800px;
+   background-color: #000;
+   color: #fff;
+}
+
+#hidden_figures {
+   /* height: 800px; */
+   background-color: #000;
+   color: #fff;
+}
+
+#Iso2:hover {
+   border: 2px solid white;
+   background-color: #fff;
+   color: #000;
+   border-radius: 15px;
+   transform: translateY(-20px);
+   transition: 1s ease-in-out;
+   transform: scale(1.2);
+}
+
+#Hdf:hover {
+   border: 2px solid white;
+   background-color: #fff;
+   color: #000;
+   border-radius: 15px;
+   transform: translateY(-20px);
+   transition: 1s ease-in-out;
+   transform: scale(1.2);
+}
+#header h1 {
+   font-size: 50px;
+   text-align: center;
+   padding-top: 100px;
+   
 }
 h1 {
    font-size: 50px;
-   margin-top: 50px;
-   margin-bottom: 50px;
    text-align: center;
 }
 
 .card {
    display: flex;
-   gap: 25px;
    justify-content: center;
+   gap: 100px;
    padding-bottom: 5rem;
    padding-top: 5rem;
 }
-
+.content {
+   text-align: center;
+   padding-bottom: 20px;
+}
 .content h2 {
    text-align: center;
+   padding-top: 20px;
 }
+
+
 a img {
    width: 200px;
    height: 320px;
@@ -49,32 +88,40 @@ a img {
 
 .container {
    /* background-color: #fff; */
-   height: 1500px;
-   margin-top: 150px;
-   font-size: 2rem;
+   height: 1300px;
+   /* margin-top: 100px; */
+   /* font-size: 2rem; */
+}
+
+.container span, h3{
+   font-size: 22px;
 }
 
 .container h2 {
-   margin-bottom: 25px;
+   /* margin-top: 100px; */
+   margin-bottom: 40px;
+   font-size: 2rem;
 }
 
-#inside_out_2 h2{
+#inside_out_2{
    text-align: center;
-   
+   background: #000;
+   color: #fff;
 }
 .character {
    display: flex;
-   /* flex-direction: column; */
    justify-content: center;
-   /* gap: 30px; */
-   
    border-radius: 25px;
+   margin-bottom: 100px;
 }
 
 .character h3 {
    text-align: center;
+   padding-top: 15px;
 }
-
+#anxiety, #envy, #ennui, #embarrassment span{
+   padding-bottom: 15px;
+}
 
 #anxiety img{
    width: 300px;
@@ -82,11 +129,26 @@ a img {
    background-color: #dd7427;
 }
 
+#anxiety:hover {
+   color: #fff;
+   background: #dd7427;
+   transition: 0.4s ease-in;
+   transform: translateY(-20px);
+}
+
 #envy img{
    width: 300px;
    height: 500px;
    background-color: #70cdc5;
    object-fit: contain;
+   
+}
+
+#envy:hover {
+   color: #fff;
+   background: #70cdc5;
+   transition: 0.4s ease-in;
+   transform: translateY(-20px);
 }
 
 #ennui img{
@@ -95,35 +157,168 @@ a img {
    background-color: #172075;
    object-fit: contain;
 }
+#ennui:hover {
+   color: #fff;
+   background: #172075;
+   transition: 0.4s ease-in;
+   transform: translateY(-20px);
+}
+
 
 #embarrassment img{
    width: 300px;
    height: 500px;
    background-color: #ee86ab;
    object-fit: contain;
-   
+}
+#embarrassment:hover {
+   color: #fff;
+   background: #ee86ab;
+   transition: 0.4s ease-in;
+   transform: translateY(-20px);
 }
 
-.review {
+.description {
    display: flex;
    justify-content: center;
-   gap: 25px;
+   gap: 50px;
    padding-top: 100px;
+   padding-bottom: 100px;
 }
 .warper{
-   width: 580px;
-   
+   width: 500px;
+   background-color: #fff;
+   color: #000;
+   padding: 25px;
+   border-radius: 15px;
+}
+
+.warper p{
+   text-align: left;
+   text-indent: 20px;
 }
 
 .warper h1 {
    margin-top: 0;
+   margin-bottom: 15px;
 }
-.warper ul li {
+
+.warper ul li{
    text-align: left;
    list-style: none;
 }
 .warper2 video {
    width: 600px;
-   border-radius: 25px;
-   background-color: #000;
+   border-radius: 15px;
+   margin-bottom: 25px;
+}
+.warper2 h2 {
+   padding-bottom: 25px;
+   /* padding-top: 25px; */
+   text-align: left;
+}
+.actor {
+   padding: 25px;
+   border-radius: 15px;
+   background: #fff;
+   color: #000;
+}
+.box {
+   display: flex;
+   justify-content: space-between;
+}
+
+.cast {
+   text-align: center;
+}
+.cast h3 {
+   font-size: 15px;
+}
+.cast img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+
+.quotes {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   /* background-color: #fff; */
+   color: #fff;
+   text-align: left;
+}
+
+.quotes h3 {
+   padding-bottom: 10px;
+}
+
+.poster {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 100px;
+   border-radius: 15px;
+   gap: 50px;
+}
+.boxes 
+.poster h2 {
+   padding-top: 15px;
+}
+.poster img {
+   /* background: #fff; */
+   width: 600px;
+   object-fit: contain;
+   border-radius: 15px;
+   border: 2px solid white;
+   /* margin-right: 100px; */
+}
+
+.poster img:hover {
+   background-color: #fff;
+   transition: .7s ease-in;
+   transform: translateY(-10px);
+}
+
+.true_story {
+   text-align: left;
+}
+
+.true_story a {
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.true_story a:hover {
+   transform: translateY(-10px);
+   transition: 0.4s ease-out;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #000;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #bcbcbc;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
 }
