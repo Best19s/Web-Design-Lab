@@ -1,0 +1,96 @@
+@import url("satoshi.css");
+
+:root {
+  --June_bud: #bade4f;
+  --Cornflower_blue: #6e8eec;
+  --Linen: #f0ece5;
+  --Signal_black: #282b26;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--Linen);
+  color: var(--Cornflower_blue);
+  font-family: "Satoshi-Regular", Arial, Helvetica, sans-serif;
+}
+
+.center{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fade-up 1.5s ease-out;
+}
+
+header  h1{
+  font-size: 5em;
+  text-align: center;
+}
+header b {
+  font-family: sans-serif;
+  background: var(--June_bud);
+  color: #fff;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+header p {
+  text-indent: 2rem;
+  text-align: justify;
+  width: 900px;
+  margin-bottom: 50px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: var(--Cornflower_blue);
+  border:  1px solid var(--Signal_black);
+  transition: .8s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  transform: scale(1.2);
+  box-shadow: 0px 5px var(--Signal_black);
+  font-size: larger;
+  background-color: var(--June_bud);
+  color: var(--Signal_black)
+}
+
+.scroll_watcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #bade4f;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll_watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll_watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
