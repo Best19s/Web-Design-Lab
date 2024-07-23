@@ -16,19 +16,50 @@ body {
 }
 
 .center{
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   animation: fade-up 1.5s ease-out;
 }
 
-header  h1{
-  font-size: 5em;
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+nav {
+  display: flex;
+  /* justify-content: center; */
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  border: 2px solid var(--June_bud);
+  border-radius: 15px;
+}
+
+nav h1 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+nav h1 b {
+  color: var(--June_bud);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 50px;
+}
+section  h1{
+  /* font-size: 5em; */
   text-align: center;
 }
-header b {
+section b {
   font-family: sans-serif;
   background: var(--June_bud);
   color: #fff;
@@ -36,12 +67,7 @@ header b {
   border-radius: 15px;
 }
 
-header p {
-  text-indent: 2rem;
-  text-align: justify;
-  width: 900px;
-  margin-bottom: 50px;
-}
+
 
 button {
   cursor: pointer;
@@ -59,7 +85,7 @@ button:hover {
   transform: translateY(-3px);
   transform: scale(1.2);
   box-shadow: 0px 5px var(--Signal_black);
-  font-size: larger;
+  font-size: 20px;
   background-color: var(--June_bud);
   color: var(--Signal_black)
 }

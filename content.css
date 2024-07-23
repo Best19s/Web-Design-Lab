@@ -1,0 +1,116 @@
+:root {
+  --June_bud: #bade4f;
+  --Cornflower_blue: #6e8eec;
+  --Linen: #f0ece5;
+  --Signal_black: #282b26;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+  animation: fade-up .5s linear;
+}
+
+/* button span {
+  vertical-align: text-bottom;
+  padding-right: 5px;
+} */
+
+.material-symbols-outlined {
+  font-size: 25px !important;
+  vertical-align: sub;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes span {
+  vertical-align: text-bottom;
+}
+
+.boxes a {
+  background-color: var(--Cornflower_blue);
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  float: right;
+}
+
+.boxes {
+  width: 800px;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: #fff;
+  border: 2px solid var(--Signal_black);
+  border-radius: 15px;
+}
+
+.boxes img {
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.boxes p {
+  font-size: large;
+  line-height: 22px;
+  text-indent: 25px;
+  padding: 20px 0px;
+  clear: both;
+}
+
+.boxes ul {
+  padding-left: 50px;
+}
+
+.boxes li {
+  list-style: square;
+}
+
+#box_4 h3{
+  border-left: 5px solid #bade4f;
+  color: var(--June_bud);
+  padding-left: 10px;
+}
+
+#bt_line {
+  background-color: var(--June_bud);
+  color: var(--Signal_black);
+  margin-bottom: 50px;
+}
+
+.scroll_watcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--June_bud);
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll_watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll_watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+@keyframes fade_in {
+  0% {scale: .6; opacity: 0;} /* เริ่มต้นจากขนาด 0.6 และความทึบเป็น 0 */
+  100% {scale: 1; opacity: 1;} /* สิ้นสุดที่ขนาด 1 และความทึบเป็น 1 */
+}
