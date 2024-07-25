@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .test1 {
+         white-space: nowrap;
+         width: 200px;
+         border: 1px solid #000;
+         overflow: hidden;
+         text-overflow: clip;
+      }
+      .test2 {
+         white-space: nowrap;
+         width: 200px;
+         border: 1px solid #000;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+   </style>
+</head>
+<body>
+   <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+   <p>text-overflow: clip:</p>
+   <p class="test1">This is some long that will not fit in the box.<textarea name="" id=""></textarea></p>
+   <p>text-overflow: ellipsis:</p>
+   <p class="test2">This is some long that will not fit in the box.<textarea name="" id=""></textarea></p>
+</body>
+</html>
