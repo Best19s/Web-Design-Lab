@@ -35,7 +35,6 @@ nav {
   width: 600px;
   border: 1px solid var(--Signal_black);
   background-color: var(--Linen);
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   border-radius: 15px;
   padding: 0px 15px;
   animation: fade-up .8s ease-in;
@@ -53,7 +52,7 @@ nav h2 mark {
   border-radius: 10%;
 }
 
-ul li {
+header ul li {
   display: inline;
   padding: 10px;
 }
@@ -61,7 +60,6 @@ ul li {
 li a {
   text-decoration: none;
   color: var(--Signal_black);
-  /* border: 2px solid var(--June_bud); */
   padding: 10px;
   border-radius: 15px;
   font-weight: bold;
@@ -70,6 +68,8 @@ li a {
 #btn1:hover {
   background-color: var(--Cornflower_blue);
   color: var(--Linen);
+  padding: 15px;
+  font-size: 19px;
 }
 
 nav a:hover {
@@ -82,12 +82,14 @@ article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-bottom: 10rem; */
 }
 
 article h1 {
   font-size: 5rem;
   color: var(--Cornflower_blue);
+  animation: fade-up 1s ease-in-out;
+  /* animation-timeline: view();
+  animation-range: entry 0% cover 60%; */
 }
 article b {
   font-family: sans-serif;
@@ -97,29 +99,31 @@ article b {
   border-radius: 15px;
 }
 
-article button {
+article a {
   border-radius: 15px;
+  color: var(--Signal_black);
+  border: 2px solid var(--Signal_black);
+  text-decoration: none;
   padding: 10px;
   transition: .8s;
   background-color: var(--Linen);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  animation: fade-up 1s ease-in-out;
 }
-article button:hover {
+article a:hover {
   transform: scale(1.2);
   box-shadow: 0px 5px var(--Signal_black);
   background-color: var(--June_bud);
 }
 
-article a {
-  text-decoration: none;
-  font-size: 20px;
-  color: var(--Signal_black);
-  font-weight: bold;
-}
 
 section {
   background-color: var(--Cornflower_blue);
   height: 120vh;
   position: relative;
+
 }
 .content{
   background-color: var(--Linen);
@@ -137,27 +141,34 @@ section {
   text-align: center;
   font-size: 2rem;
 }
+.content p {
+  text-indent: 15px;
+}
 
 section #thumb-up {
   position: absolute;
   /* top: 50px; */
-  right: 5rem;
-  top: 7rem;
+  right: 7rem;
+  top: 13rem;
   bottom: 0;
   width: 500px;
   z-index: 0;
+  animation: fade-in ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
 }
 
 section #book {
   position: absolute;
   z-index: 0;
   width: 500px;
-  top: 7rem;
+  top: 13rem;
   transform: scaleX(-1);
-  left: 4rem;
+  left: 7rem;
+  animation: fade-in ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
 }
-
-
 footer {
   background-color: var(--June_bud);
   padding: 2rem;
@@ -180,6 +191,17 @@ footer {
 .inbox h2 {
   font-size: 2rem;
   font-weight: 100;
+  margin-bottom: 26.56px;
+}
+.inbox span {
+  vertical-align: middle;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+.inbox span:hover {
+  scale: 1.2;
 }
 .inbox #email_box {
   padding: 10px;
@@ -197,16 +219,7 @@ footer {
   background-color: var(--Linen);
   border: none;
 }
-.inbox button {
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 12px;
-  background-color: inherit;
-  font-weight: 500;
-}
-.inbox button:hover {
-  background-color: var(--Linen);
-}
+
 .menu {
   display: flex;
 }
@@ -221,6 +234,10 @@ footer {
   cursor: alias;
 }
 
+.menu_box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 .menu_box li {
   cursor: pointer;
   transition: .2s ease-out;
@@ -234,22 +251,15 @@ footer {
 .menu_box h3 {
   margin-bottom: 15px;
 }
-.menu_box:last-child {
-   padding-right: 0 !important;
-}
-
-footer {
-  padding: 50px;
-}
-footer h3 {
-  margin: 0;
-}
 
 .copyright {
    width: 500px;
 }
 .container:last-child {
-  margin: 0px 13% !important;
+  margin: 0px 12rem !important;
+}
+.social {
+  margin-right: 2rem;
 }
 .social img{
    padding: 5px;
@@ -259,6 +269,7 @@ footer h3 {
 .social img:hover {
   transform: translateY(-20px);
 }
+
 
 @keyframes fade-up {
   0% {
@@ -273,6 +284,6 @@ footer h3 {
 }
 
 @keyframes fade-in {
-  from {scale: .6; opacity: 0;} /* เริ่มต้นจากขนาด 0.6 และความทึบเป็น 0 */
-  to {scale: 1; opacity: 1;} /* สิ้นสุดที่ขนาด 1 และความทึบเป็น 1 */
+  from {scale: .4; opacity: 0;}
+  to {scale: 1; opacity: 1;} 
 }
