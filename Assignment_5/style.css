@@ -257,6 +257,7 @@ footer h2 {
 .menu-footer li {
   list-style-type: none;
   cursor: pointer;
+  transition: 0.2s ease-in;
   /* เอา bullet list ออก และทำให้คลิกได้ */
 }
 .menu-footer li:hover {
