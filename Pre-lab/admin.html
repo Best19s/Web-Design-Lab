@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Events</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Admin Panel</div>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Manage Events</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="event-management">
+            <h1>Manage Events</h1>
+
+            <!-- Search and Filter Tools -->
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Search events...">
+                <select id="event-type-filter">
+                    <option value="all">All Types</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="competition">Competition</option>
+                    <!-- Add more event types as needed -->
+                </select>
+            </div>
+
+            <!-- Add Event Form -->
+            <div class="add-event">
+                <h2>Add New Event</h2>
+                <form id="add-event-form">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" required>
+                    
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" required>
+                    
+                    <label for="event-time">Event Time:</label>
+                    <input type="time" id="event-time" required>
+                    
+                    <label for="event-location">Event Location:</label>
+                    <input type="text" id="event-location" required>
+                    
+                    <label for="event-description">Event Description:</label>
+                    <textarea id="event-description" required></textarea>
+                    
+                    <label for="event-type">Event Type:</label>
+                    <select id="event-type">
+                        <option value="seminar">Seminar</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="competition">Competition</option>
+                        <!-- Add more event types as needed -->
+                    </select>
+                    
+                    <button type="submit">Add Event</button>
+                </form>
+            </div>
+
+            <!-- Event List -->
+            <div class="event-list">
+                <h2>All Events</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Location</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="event-table-body">
+                        <!-- Event rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 University Admin Panel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add JavaScript for dynamic functionality (fetching data, handling form submissions, etc.)
+    </script>
+</body>
+</html>
