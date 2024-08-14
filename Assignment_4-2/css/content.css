@@ -225,8 +225,8 @@ a span {
 footer {
   background-color: var(--June_bud);
   padding: 2rem;
-  margin-top: 6rem;
-  
+  margin-top: 100px;
+
 }
 .container {
   display: flex;
@@ -235,9 +235,7 @@ footer {
   align-items: center;
   margin-bottom: 50px;
 }
-.container h3 {
-  margin: 20px 0;
-}
+
 .container:last-child {
   justify-content: space-between;
 }
@@ -284,7 +282,7 @@ footer {
   list-style-type: none;
   line-height: 2rem;
   text-align: left;
-  padding-right: 2rem; 
+  padding-right: 2rem;
 }
 .menu_box h3 {
   cursor: alias;
@@ -310,15 +308,13 @@ footer {
 
 .copyright {
    width: 500px;
-
 }
 .container:last-child {
-  margin: 0px 17rem !important;
+  margin: 0px 12rem !important;
 }
 .social {
   margin-right: 2rem;
 }
-
 .social img{
    padding: 5px;
    cursor: pointer;

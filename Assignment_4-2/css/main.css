@@ -31,7 +31,7 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;  
+  align-items: center;
   width: 600px;
   border: 1px solid var(--Signal_black);
   background-color: var(--Linen);
@@ -148,8 +148,8 @@ section {
 section #thumb-up {
   position: absolute;
   /* top: 50px; */
-  right: 7rem;
-  top: 13rem;
+  right: 100px;
+  top: 200px;
   bottom: 0;
   width: 500px;
   z-index: 0;
@@ -162,9 +162,9 @@ section #book {
   position: absolute;
   z-index: 0;
   width: 500px;
-  top: 13rem;
+  top: 200px;
   transform: scaleX(-1);
-  left: 7rem;
+  left: 50px;
   animation: fade-in ease-in-out;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
@@ -172,7 +172,7 @@ section #book {
 footer {
   background-color: var(--June_bud);
   padding: 2rem;
-  
+
 }
 .container {
   display: flex;
@@ -228,7 +228,7 @@ footer {
   list-style-type: none;
   line-height: 2rem;
   text-align: left;
-  padding-right: 2rem; 
+  padding-right: 2rem;
 }
 .menu_box h3 {
   cursor: alias;
@@ -285,5 +285,5 @@ footer {
 
 @keyframes fade-in {
   from {scale: .4; opacity: 0;}
-  to {scale: 1; opacity: 1;} 
+  to {scale: 1; opacity: 1;}
 }
