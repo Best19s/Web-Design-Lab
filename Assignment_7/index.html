@@ -117,27 +117,26 @@
    <div class="cursor-outline"></div>
    <div class="scroll"></div>
 
-  <script>
+<script>
    function openTab(evt, tabName) {
-    let i, tabcontent, tablinks;
+      let i, tabcontent, tablinks;
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+      }
 
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active","");
-    }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
 
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+   }
 
-  </script>
-
-  <script>
+</script>
+<script>
    const cursorDot = document.querySelector(".cursor-dot");
    const cursorOutline = document.querySelector(".cursor-outline");
    window.addEventListener("mousemove", function (e) {
@@ -153,17 +152,17 @@
       cursorOutline.animate({
          left: `${posX}px`,
          top: `${posY}px`
-      }, { duration: 500, fill: "forwards"});
+      }, { duration: 500, fill: "forwards" });
    })
-  </script>
-   <script>
-      window.addEventListener("load", () => {
-         document.querySelector(".loader").classList.add("loader--hidden");
+</script>
+<script>
+   window.addEventListener("load", () => {
+      document.querySelector(".loader").classList.add("loader--hidden");
 
-         document.querySelector(".loader").addEventListener("transitionend", () => {
-            document.body.removeChild(document.querySelector(".loader"));
-         });
+      document.querySelector(".loader").addEventListener("transitionend", () => {
+         document.body.removeChild(document.querySelector(".loader"));
       });
-   </script>
+   });
+</script>
 </body>
 </html>
