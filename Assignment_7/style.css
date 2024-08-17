@@ -1,3 +1,7 @@
+@font-face {
+   font-family: "Switzer";
+   src: url(font/Switzer-Black.otf);
+}
 * {
    scroll-behavior: smooth;
 }
@@ -40,12 +44,14 @@ header {
    color: #235edc;
    background-color: #f1f1f1;
    margin-bottom: 200px;
-   /* margin-left: 120px; */
-   /* position: relative; */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+header h1 {
+   font-family: "Switzer";
 }
 
 
