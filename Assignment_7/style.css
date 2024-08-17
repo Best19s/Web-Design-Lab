@@ -1,48 +1,89 @@
+* {
+   scroll-behavior: smooth;
+}
 body {
-   margin: 120px;
+   margin: 0;
    padding: 0;
    font-family: "Prompt";
    cursor: none;
 }
+h2 {
+   color: #235edc;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 120px;
+   background-color: #f1f1f1;
+}
+nav img{
+   width: 50px;
+}
+nav a {
+   text-decoration: none;
+   color: #235edc;
+   border: 2px solid #102341;
+   padding: 10px;
+   border-radius: 15px;
+   transition: .75s;
+   font-weight: 600;
+}
+nav a:hover {
+   background-color: #235edc;
+   color: #f1f1f1;
+   box-shadow: 5px 5px #102341;
+}
 header {
    width: 100%;
-   height: 500px;
-   /* background-color: #a0bbe9; */
-   border-radius: 15px;
+   height: 800px;
+   color: #235edc;
+   background-color: #f1f1f1;
    margin-bottom: 200px;
-   position: relative;
+   /* margin-left: 120px; */
+   /* position: relative; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#tag1,#tag2,#tag3 {
+   /* background-color: #a0bbe9; */
+   color: #102341;
+   position: absolute;
+   padding: 10px 20px;
+   border-radius: 25px;
+   border: 2px solid #102341;
+   transition: .75s;
+   text-decoration: none;
+}
+#tag1 {
+   left: 300px;
+}
+#tag2 {
+   right: 260px;
+}
+#tag3 {
+   bottom: 50px;
+   /* right: 750px; */
+}
+#tag1:hover,#tag2:hover,#tag3:hover {
+   background-color: #235edc;
+   color: #f1f1f1;
+   box-shadow: 3px 5px #102341;
+}
+header img {
+   width: 450px;
+
 }
 header h1 {
-   font-size: 10em;
+   font-size: 5em;
+   margin: 0;
    text-align: center;
 }
-header h2 {
-   text-align: center;
-}
-.img img{
-   position: absolute;
-   width: 300px;
-   right: 0;
-   bottom: 0;
-}
-#head1 {
-   left: 0;
-}
-#head2 {
-   left: 0;
-   top: 0;
-}
-#logo {
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   /* animation: rotate 1.5s ease-in-out ; */
-   width: 400px;
-}
-@keyframes rotate {
-   from {opacity: 0; scale: 0;}
-   to {opacity: 1; scale: 1;}
-}
+
 .sidebar {
    float: right;
    width: 300px;
@@ -50,32 +91,63 @@ header h2 {
    border-radius: 15px;
    position: sticky;
    top: 50px;
+   margin-right: 120px;
    animation: fade-up 1s ease-in;
    animation-timeline: view();
    animation-range-end: 700px;
+   border: 2px solid #102341;
+}
+.sidebar p {
+   margin-bottom: 0;
+   font-size: larger;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
 }
 .sidebar ul {
-   padding: 15px;
+   padding: 0 15px 15px;
+   margin: 0;
 }
 .sidebar ul li {
    list-style-type: none;
-
+   margin: 10px 0;
 }
+
 .sidebar a {
    text-decoration: none;
-   line-height: 25px;
    color: #fff;
+}
+.sidebar img {
+   vertical-align: middle;
+   position: relative;
+   right: 5px;
+}
+
+.dropdown {
+   display: none;
+   /* margin: 5px 0; */
+}
+.sidebar ul li:hover .dropdown {
+   color: #fff;
+   border-radius: 12px;
+   display: block;
+}
+.dropdown li:hover {
+   color: #235edc;
+   font-weight: 600;
 }
 
 section {
-   width: 750px;
-   background: #ede7dd;
+   width: 860px;
    padding: 40px;
+   position: relative;
    border-radius: 15px;
    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
    animation: fade-up 0.75s ease-in;
    animation-timeline: view();
    animation-range-end: 600px;
+   margin-left: 120px;
+   /* border: 2px solid #000; */
 }
 span img {
    vertical-align: middle;
@@ -89,12 +161,13 @@ span img {
 }
 .tab {
    float: left;
-   border: 2px solid #235edc;
+   /* border: 2px solid #235edc; */
    border-right: none;
    background-color: #f1f1f1;
    width: 150px;
    height: 320px;
    border-radius: 15px 0 0 15px;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .tab button {
@@ -131,11 +204,12 @@ span img {
 .tabcontent {
    display: none;
    padding: 0px 20px;
-   border: 2px solid #235edc;
-   width: 600px;
+   /* border: 2px solid #000; */
+   width: 700px;
    border-radius: 0 15px 15px 0;
    border-left: none;
    height: 320px;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
    background: #fff;
 }
 
@@ -144,24 +218,60 @@ span img {
    padding-bottom: 20px;
 }
 
+.content1,.content2 {
+   margin-bottom: 100px;
+}
+
+.content1 p {
+   text-indent: 20px;
+}
+.content1 span {
+   font-weight: 500;
+   color: #235edc;
+}
+
+.content3 ul {
+   width: 500px;
+   /* background-color: #235edc; */
+}
+
+.content3 ul li {
+   /* background-color: #235edc; */
+   transition: .25s ease-in;
+   margin: 15px 0;
+}
+.content3 ul li:hover {
+   color: #235edc;
+   font-weight: 600;
+   list-style-type: circle;
+   transform: translateX(20px);
+}
+
 footer {
-   width: 100%;
-   height: 250px;
+   width: 860px;
+   height: 300px;
    /* background-color: #a0bbe9; */
-   margin-top: 50px;
+   margin-top: 100px;
    border-radius: 15px;
-   padding: 30px;
+   padding: 40px;
+   margin-left: 120px;
+   margin-bottom: 100px;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .cursor-dot {
    width: 5px;
    height: 5px;
    background-color: #235edc;
 }
+.cursor-dot img {
+   width: 50px;
+}
 .cursor-outline {
    width: 30px;
    height: 30px;
    border: 2px solid #235edc;
 }
+
 .cursor-dot, .cursor-outline {
    position: fixed;
    top: 0;
@@ -171,39 +281,8 @@ footer {
    z-index: 1;
    pointer-events: none;
 }
-.loader {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: #fff;
-   transition: opacity 0.75s, visibility 0.75s;
-}
 
-.loader--hidden {
-   opacity: 0;
-   visibility: hidden;
-}
-
-.loader::after {
-   content: "";
-   width: 75px;
-   height: 75px;
-   border: 15px solid #ddd;
-   border-top-color: #235edc;
-   border-radius: 50%;
-   animation: loading 0.85s ease infinite;
-}
-
-@keyframes loading {
-   from { transform: rotate(0turn) }
-   to { transform: rotate(1turn) }
-}
-@keyframes fade-up {
+/* @keyframes fade-up {
    0% {
      opacity: 0;
      transform: translateY(30px) scale(0);
@@ -213,4 +292,4 @@ footer {
      opacity: 1;
      transform: translateY(0px) scale(1);
    }
-}
+} */
