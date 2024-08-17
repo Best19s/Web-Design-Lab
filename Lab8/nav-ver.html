@@ -4,39 +4,35 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <style>
-      ul {
-         list-style-type: none;
-         padding: 0;
-         margin: 0;
-      }
-      li {
-         display: inline-block;
-         position: relative;
-      }
-      ul.dropdown {
-         background-color: aquamarine;
-         display: none;
-         position: absolute;
-      }
-      ul li:hover ul.dropdown {
-         display: block;
-      }
-   </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <ul>
+   <ul class="dropdown-1">
+      <li>History</li>
       <li>
-         <a href="www.google.com" target="_self">Home</a>
-         <ul class="dropdown">
-            <li><a href="">page1</a></li>
-            <li><a href="">page2</a></li>
-            <li><a href="">page3</a></li>
+         Album
+         <ul class="dropdown-2">
+
+            <li>Studio albums
+               <ul class="dropdown-3">
+                  <li>Dall (2024)</li>
+               </ul>
+            </li>
+
+            <li>Digital singles
+               <ul class="dropdown-4">
+                  <li>The Carol 3.0 (2023)</li>
+                  <li>Pre1 : Birth (2024)</li>
+                  <li>Pre2 : Flower Rhythm (2024)</li>
+                  <li>Pre3 : Candy Crush (2024)</li>
+                  <li>Pre4 : Air (2024)</li>
+               </ul>
+            </li>
+
          </ul>
       </li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">About</a></li>
+      <li>Members</li>
+      <li>Concerts</li>
    </ul>
 </body>
 </html>

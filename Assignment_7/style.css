@@ -52,6 +52,7 @@ header {
 
 header h1 {
    font-family: "Switzer";
+   animation: pop-up .75s ease-in-out;
 }
 
 
@@ -67,13 +68,16 @@ header h1 {
 }
 #tag1 {
    left: 300px;
+   animation: pop-up .55s ease-in-out;
 }
 #tag2 {
    right: 260px;
+   animation: pop-up .65s ease-in-out;
 }
 #tag3 {
    bottom: 50px;
-   /* right: 750px; */
+   animation: pop-up .75s ease-in-out;
+   /* animation-delay: .40s; */
 }
 #tag1:hover,#tag2:hover,#tag3:hover {
    background-color: #235edc;
@@ -82,7 +86,7 @@ header h1 {
 }
 header img {
    width: 450px;
-
+   animation: pop-up .75s ease-in-out;
 }
 header h1 {
    font-size: 5em;
@@ -100,7 +104,7 @@ header h1 {
    margin-right: 120px;
    animation: fade-up 1s ease-in;
    animation-timeline: view();
-   animation-range-end: 700px;
+   animation-range-end: 600px;
    border: 2px solid #102341;
 }
 .sidebar p {
@@ -263,6 +267,9 @@ footer {
    margin-left: 120px;
    margin-bottom: 100px;
    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   animation: fade-up 0.75s ease-in;
+   animation-timeline: view();
+   animation-range-end: 420px;
 }
 .cursor-dot {
    width: 5px;
@@ -288,7 +295,7 @@ footer {
    pointer-events: none;
 }
 
-/* @keyframes fade-up {
+@keyframes fade-up {
    0% {
      opacity: 0;
      transform: translateY(30px) scale(0);
@@ -298,4 +305,15 @@ footer {
      opacity: 1;
      transform: translateY(0px) scale(1);
    }
-} */
+}
+
+@keyframes pop-up {
+   from {
+      opacity: 0;
+      scale: 0;
+   }
+   to {
+      opacity: 1;
+      scale: 1;
+   }
+}
