@@ -1,0 +1,97 @@
+@font-face {
+   font-family: 'Comico';
+   src: url(font/Comico-Regular.otf);
+}
+body {
+   margin: 0;
+   font-family: 'Comico';
+   font-size: 14px;
+}
+
+.nav_bar {
+   background-color: rgba(255, 255, 255, .8);
+   position: sticky;
+   top: 0;
+   border-bottom: 2px dashed lightblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+.nav_bar img {
+   vertical-align: middle;
+}
+.nav_bar h2 {
+   margin-left: 1rem;
+}
+.nav_bar ul {
+   list-style: none;
+}
+.nav_bar ul li{
+   display: inline-block;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+table {
+   border-collapse: collapse; /* รวมเส้นขอบของเซลล์ */
+   text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+   border: 1px solid #000; /* เส้นขอบตาราง */
+   width: 63%; /* ความกว้างของตาราง */
+}
+
+thead {
+   background-color: lightblue; /* สีพื้นหลังของแถวหัวตาราง */
+}
+
+tfoot {
+   background-color: skyblue; /* สีพื้นหลังของแถวท้ายตาราง */
+}
+
+th, td {
+   padding: .5rem; /* ระยะห่างภายในเซลล์ */
+   border: 1px dashed #000; /* เส้นขอบของเซลล์เป็นเส้นประ */
+}
+
+tr:nth-child(even) {
+   background-color: #f2f2f2; /* สีพื้นหลังของแถวที่เป็นเลขคู่ */
+}
+
+.table_info {
+   float: left; /* จัดให้ตารางลอยไปทางซ้าย */
+   margin-right: 1rem; /* ระยะห่างด้านขวาของตาราง */
+   margin-left: 1rem; /* ระยะห่างด้านซ้ายของตาราง */
+}
+
+
+.heading {
+   margin-right: 1rem;
+   position: sticky;
+   top: 5rem;
+}
+.img_bg {
+   border-radius: 12px;
+   width: 34%;
+   height: 350px;
+   object-fit: cover;
+   border: 1px solid #000;
+
+}
+
+.btn_link {
+   display: inline-block;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   color: #fff;
+   text-decoration: none;
+   border: 2px dashed #000;
+   border-radius: 12px;
+   padding: 1rem;
+   background-color: skyblue;
+}
+
+.fact {
+   clear: both;
+   word-break: keep-all;
+   width: 62%;
+   margin: 0 1rem 2rem 1rem ;
+}

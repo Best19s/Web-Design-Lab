@@ -1,0 +1,120 @@
+@font-face {
+   font-family: 'Comico';
+   src: url(font/Comico-Regular.otf);
+}
+
+body {
+   background-image: url('img/fbf090dc9c2587aeee9d25318f134949.jpg');
+   margin: 0;
+   font-family: 'Comico';
+   box-sizing: border-box;
+}
+.btn_link {
+   display: inline-block;
+   margin-bottom: 1rem;
+   color: #fff;
+   text-decoration: none;
+   border: 2px dashed #000;
+   border-radius: 12px;
+   padding: .5rem;
+   background-color: skyblue;
+}
+/* ตั้งค่าการจัดการระยะห่าง, การจัดตำแหน่ง, การตกแต่งพื้นหลัง, ขอบ, และมุมโค้งของฟอร์ม */
+form {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 1rem;
+   background-color: lightblue;
+   border: 2px dashed #000;
+   border-radius: 12px;
+   width: 50%;
+}
+
+/* กำหนดลักษณะของ drop-down menu เช่น ขนาด, การตกแต่ง, และขอบ */
+select {
+   display: inline-block;
+   width: 20%;
+   padding: .2rem;
+   font-family: 'Comico';
+   border-radius: 12px;
+   border: 2px solid #000;
+}
+
+/* ตั้งสีของเส้นแบ่ง (horizontal rule) เป็นสีดำ */
+hr {
+   border-color: #000;
+}
+
+/* ตั้งค่าการจัดการลักษณะของพื้นที่กรอกข้อความ เช่น ขอบ, มุมโค้ง, และการตั้งค่า margin */
+textarea {
+   font-family: 'Comico';
+   border: 2px solid #000;
+   border-radius: 12px;
+   margin-bottom: 1rem;
+}
+
+/* กำหนดลักษณะของฟิลด์กรอกข้อมูล เช่น ขนาด, ขอบ, การตกแต่ง, และการตั้งค่า padding */
+input {
+   width: 100%;
+   margin-bottom: 1rem;
+   font-family: 'Comico';
+   box-sizing: border-box;
+   border: 2px solid #000;
+   padding: .4rem;
+   border-radius: 12px;
+}
+
+/* กำหนดลักษณะของปุ่มส่งฟอร์ม เช่น ขนาดตัวอักษร, สีพื้นหลัง, และสีตัวอักษร */
+input[type="submit"] {
+   font-family: 'Comico';
+   font-size: 1.2rem;
+   background-color: #fff;
+   color: #000;
+}
+
+/* การเปลี่ยนแปลงลักษณะของปุ่มส่งฟอร์มเมื่อเคอร์เซอร์อยู่เหนือปุ่ม */
+input[type="submit"]:hover {
+   background-color: skyblue;
+   color: #fff;
+   cursor: pointer;
+}
+
+/* ขยายขนาดของฟิลด์กรอกข้อมูลภายในคลาส .name */
+.name input {
+   width: 110%;
+}
+
+/* ตั้งค่าการตกแต่งภายในของฟอร์ม */
+.form-input {
+   padding: 2rem;
+}
+
+/* จัดตำแหน่งฟิลด์กรอกข้อมูลในรูปแบบ flexbox พร้อมระยะห่างระหว่างกัน */
+.name {
+   display: flex;
+   gap: 4rem;
+}
+
+/* กำหนดลักษณะของฟิลด์กรอกข้อมูลที่มีคลาส .qnt พร้อมระยะห่างด้านซ้าย */
+.qnt {
+   display: inline;
+   margin-left: 1rem;
+}
+
+.qnt input {
+   width: 20%;
+}
+
+/* กำหนดระยะห่างด้านบนและล่างสำหรับการจัดการการจัดส่ง */
+.delivery {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+/* ขยายขนาดของฟิลด์กรอกข้อมูลภายในคลาส .delivery และตั้งค่า margin เป็น 0 */
+.delivery input {
+   margin: 0;
+   width: 2%;
+}

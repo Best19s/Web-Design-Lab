@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="form.css">
+   <title>FruitDelight-Checkout</title>
+   <link rel="icon" href="img/60534de22ad6c2ba342309f206278af8.jpg">
+</head>
+
+<body>
+   <form action="index.html" method="post">
+      <a href="index.html" class="btn_link">Go back</a>
+      <h1>Thank you for your purchase!</h1>
+      <p>
+         We appreciate your order and will process it shortly. If you have any questions, feel free to contact us.
+         Have a great day!</p>
+      <hr>
+      <!-- <h4>Information:</h4> -->
+      <div class="form-input">
+         <div class="name">
+            <div class="fname">
+               <label for="fname_in">First Name:</label>
+               <input type="text" name="fname" id="fname_in">
+            </div>
+            <div class="lname">
+               <label for="lname_in">Last Name:</label>
+               <input type="text" name="lname" id="lname_in">
+            </div>
+         </div>
+
+         <label for="email_in">Email:</label>
+         <input type="email" name="email" id="email_in">
+
+         <div class="tel">
+            <label for="tel_in">Contact Number:</label>
+            <input type="tel" name="tel" id="tel_in">
+
+            <div class="addr">
+               <label for="addrs">Address:</label> <br>
+               <textarea name="address" id="addrs" rows="4" cols="84"></textarea>
+            </div>
+         </div>
+
+         <label for="fruits_in">Select Our Fruit</label>
+         <select name="fruits" id="fruits_in">
+            <optgroup label="Choose fruits">
+
+               <option value="1">Banana</option>
+               <option value="2">Apple</option>
+               <option value="3">Orange</option>
+               <option value="4">Mango</option>
+               <option value="5">Watermelon</option>
+               <option value="6">Pineapple</option>
+               <option value="7">Strawberries</option>
+               <option value="8">Avocado</option>
+               <option value="9">Cantaloupe</option>
+            </optgroup>
+         </select>
+
+         <div class="qnt">
+            <label for="qnt_in">Quantity:</label>
+            <input type="number" name="quantity" id="qnt_in">
+         </div>
+
+         <div class="delivery">
+            <label for="fruits_radio_in1">Type of Delivery: </label> <br>
+            <input type="radio" name="fruits" id="fruits_radio_in1"> <label for="fruits_radio_in1">Fast Delivery + 20$</label> <br>
+            <input type="radio" name="fruits" id="fruits_radio_in2"> <label for="fruits_radio_in2">Normal Delivery + 5$</label>
+         </div>
+
+         <input type="submit" value="Checkout!">
+      </div>
+   </form>
+</body>
+
+</html>
